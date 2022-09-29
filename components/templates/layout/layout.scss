@@ -1,0 +1,42 @@
+@import '../../../styles/variables.scss';
+
+.container {
+    background: url(http://www.script-tutorials.com/demos/360/images/stars.png) top center #000;
+    overflow-x: hidden;
+    
+    &__animationStars {
+        background: url(http://www.script-tutorials.com/demos/360/images/twinkling.png) top center;
+        animation: move-stars 200s linear infinite;
+
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    
+    p {
+        color: $text-color-primary;
+        font-size: 1.4rem;
+
+        a {
+            text-decoration: none;
+            color: $text-color-secondary;
+        }
+    }
+
+    p a:hover {
+        color: $text-color-secondary-hover;
+    }
+}
+
+.container, .animationStars {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+@keyframes move-stars {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}

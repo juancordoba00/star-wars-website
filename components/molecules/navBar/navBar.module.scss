@@ -1,0 +1,14 @@
+@import '../../../styles/variables.scss';
+
+.header {
+    background: $primary-color;
+    border-bottom-left-radius: .7rem;
+    border-bottom-right-radius: .7rem;
+    opacity: .97;
+
+    &__title {
+        font-size: 2rem;
+        font-family: 'star wars';
+        letter-spacing: 0.1rem;
+    }
+}

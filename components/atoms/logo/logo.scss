@@ -1,0 +1,8 @@
+.logo__star_wars {
+    width: 20rem;
+    align-self: center;
+
+    @include from($medium) {
+        width: 30rem;
+    }
+}

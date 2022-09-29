@@ -1,0 +1,26 @@
+@import '../../../styles/variables.scss';
+
+.detailCharacter__title {
+
+    &--normal {
+        font-size: 1.4rem;
+        margin: .5rem 0 .5rem 0;
+        color: $color-gray-medium;
+
+        .detailCharacter__value {
+            color: $color-gray-light;
+            font-size: 1.3rem;
+        }
+    }
+    
+    &--chip {
+        font-size: .9rem;
+        margin: 0;
+        color: $color-gray-medium;
+
+        .detailCharacter__value {
+            color: $color-gray-light;
+            font-size: .8rem;
+        }
+    }
+}

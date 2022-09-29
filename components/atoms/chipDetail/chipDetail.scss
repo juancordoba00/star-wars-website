@@ -1,0 +1,33 @@
+@import '../../../styles/variables.scss';
+
+.chip-container {
+    display: flex;
+    flex-direction: row;
+    width: 19rem;
+    height: auto;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0px 1px 5px 1px rgba(41, 41, 41, .7);
+
+    &__imgFilm {
+        width: 30%;
+    }
+
+    &__boxDetails {
+        margin: .4rem .5rem .4rem .7rem;
+
+        &__title {
+            font-size: 1.1rem;
+            margin: 0;
+        }
+
+        &__planets {
+            margin-top: .4rem;
+        }
+    }
+}
+
+.chip-container .chip-container__boxDetails hr {
+    margin: .2rem 0 .2rem 0;
+    opacity: .4;
+}

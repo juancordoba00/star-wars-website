@@ -1,0 +1,79 @@
+@import '../../../styles/variables.scss';
+
+.modal-backGround {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-container {
+    min-width: 28rem;
+    max-width: 36rem;
+    margin: 0 2rem 0 2rem;
+    height: auto;
+    background: white;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+    padding: 2.8rem;
+    border-radius: 1rem;
+
+    hr {
+        opacity: .5;
+        margin: 1.4rem 0 1rem 0;
+    }
+
+    &__close {
+        cursor: pointer;
+        width: 2.4rem;
+        height: 2.4rem;
+        position: absolute;
+        right: 1.2rem;
+        top: 1rem;
+        color: $color-gray-medium;
+    }
+
+    &__boxImageAndDatails {
+        display: flex;
+        border-radius: 1rem;
+        width: 100%;
+    }
+
+    &__characterImg {
+        width: 50%;
+        border-radius: 1rem;
+        box-shadow: 2px 1px 7px 1px rgb(41, 41, 41),0px 10px 15px -3px rgba(0,0,0,0.1);
+    }
+
+    &__details {
+        margin-left: 1.5rem;
+        margin-top: .5rem;
+
+        &__name {
+            font-size: 1.8rem;
+            margin: 0;
+        }
+    }
+
+    &__boxFilms {
+        
+        .slick-track {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .slick-arrow {
+            display: none !important;
+        }
+    }
+
+    @include from($medium) {
+        max-width: 46rem;
+
+        &__close {
+            width: 2.8rem;
+            height: 2.8rem;
+        }
+    }
+    
+}

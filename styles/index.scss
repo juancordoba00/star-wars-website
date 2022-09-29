@@ -1,0 +1,18 @@
+@import './normalize.scss';
+@import './variables.scss';
+@import './mixins.scss';
+
+@import '../components/atoms/icon/icon.module.scss';
+@import '../components/atoms/logo/logo.scss';
+@import '../components/atoms/detailCharacter/detailCharacter.scss';
+@import '../components/atoms/chipDetail/chipDetail.scss';
+
+@import '../components/molecules/navBar/navBar.module.scss';
+@import '../components/molecules/card/card.module.scss';
+@import '../components/molecules/modalDetails/modalDetails.scss';
+
+@import '../components/organisms/containerCards/containerCards.scss';
+
+@import '../components/templates/layout/layout.scss';
+
+@import './pages/home.module.scss'
