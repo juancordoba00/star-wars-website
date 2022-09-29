@@ -73,9 +73,9 @@ export const ModalDetails = ({ character, show, closeModal }: IProps) => {
           <h2>Films</h2>
           <Slider {...settings}>
             {
-                character.filmConnection?.films.map(film => {
+                character.filmConnection?.films.map((film, index) => {
                     return (
-                        <ChipDetail film={film} />
+                        <ChipDetail film={film} key={index} />
                     )
                 })
             }

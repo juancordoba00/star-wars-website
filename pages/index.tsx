@@ -33,7 +33,7 @@ const Home: NextPage<IProps> = ({ characters }) => {
       setShowModal(true);
       return;
     }
-  }, [router.query]);
+  }, [router.query, characters]);
 
   return (
     <Layout>

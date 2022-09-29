@@ -6,7 +6,7 @@ interface IProps {
   characters: Person[];
 }
 
-export const ContainerCards = React.memo(({ characters }: IProps) => {
+export const ContainerCards = ({ characters }: IProps) => {
 
   return (
     <section className="containerCards">
@@ -17,4 +17,4 @@ export const ContainerCards = React.memo(({ characters }: IProps) => {
       }
     </section>
   );
-});
+};
